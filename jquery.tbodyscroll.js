@@ -9,6 +9,7 @@
  * contents above/below table while scrolling body.
  * 
  * Tested on:
+ * - jQuery 1.4.3
  * - Opera 10.63/Linux
  * - Opera 10.63/Windows
  * - Firefox 3.6.12/Linux
