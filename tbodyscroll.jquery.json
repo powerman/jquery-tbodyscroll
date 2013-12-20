@@ -1,0 +1,31 @@
+{
+    "name": "tbodyscroll",
+    "version": "1.0.0",
+    "title": "tbodyScroll",
+    "author": {
+        "name": "Alex Efros",
+        "email": "powerman-asdf@ya.ru",
+        "url": "http://powerman.name/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/powerman/jquery-tbodyscroll/blob/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.4.3"
+    },
+    "description": "Add vertical scrollbar to <tbody> element and keep <thead> and <tfoot> contents above/below table while scrolling body.",
+    "keywords": [
+        "table",
+        "tbody",
+        "scroll",
+        "scrollbar",
+        "scrolling"
+    ],
+    "homepage": "https://github.com/powerman/jquery-tbodyscroll",
+    "docs": "https://github.com/powerman/jquery-tbodyscroll",
+    "demo": "http://powerman.name/example/tbodyScroll/",
+    "bugs": "https://github.com/powerman/jquery-tbodyscroll/issues"
+}
