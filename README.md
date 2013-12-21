@@ -4,9 +4,9 @@ tbodyScroll jQuery plugin
 Add vertical scrollbar to `<tbody>` element and keep `<thead>` and
 `<tfoot>` contents above/below table while scrolling body.
 
-http://powerman.name/example/tbodyScroll/[Demo and examples].
+[Demo and examples](http://powerman.name/example/tbodyScroll/).
 
-.Tested on:
+Tested on:
 * jQuery 1.4.3
 * Opera 10.63/Linux
 * Opera 10.63/Windows
@@ -16,9 +16,9 @@ http://powerman.name/example/tbodyScroll/[Demo and examples].
 * Chromium 7.0.517.41/Linux
 * IE 8/Windows
 
-== Usage
+## Usage
 
-[source,javascript]
+```javascript
 $('table').tbodyScroll({
      thead_height:   '30px',
      tbody_height:   '80px',
@@ -26,6 +26,7 @@ $('table').tbodyScroll({
      head_bgcolor:   'transparent',
      foot_bgcolor:   'transparent'
 });
+```
 
 Required user CSS:
 
@@ -37,7 +38,7 @@ Required user CSS:
 
 Required user markup (either `<thead>` or `<tfoot>` is optional):
 
-[source,html]
+```html
 <style>
     th.some,  td.some  { width: ...; }
     th.other, td.other { width: ...; }
@@ -64,10 +65,11 @@ Required user markup (either `<thead>` or `<tfoot>` is optional):
     </tr>
 </tfoot>
 </table>
+```
 
 Generated markup:
 
-[source,html]
+```html
 <div class="tbodyScroll-outer">
     <div class="tbodyScroll-head-bg"></div>
     <div class="tbodyScroll-foot-bg"></div>
@@ -75,3 +77,4 @@ Generated markup:
         {table}
     </div>
 </div>
+```
