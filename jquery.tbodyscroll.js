@@ -48,7 +48,7 @@
             tfoot_th.height( settings.tfoot_height );
             thead_th.css({ 'padding-top': 0, 'padding-bottom': 0 });
             tfoot_th.css({ 'padding-top': 0, 'padding-bottom': 0 });
-            if ($.browser.msie) // http://bugs.jquery.com/ticket/7417
+            if (typeof ($.browser) != 'undefined' && $.browser.msie) // http://bugs.jquery.com/ticket/7417
                 var horiz_spc = $this.find('thead')[0].currentStyle.borderSpacing.split(' ')[0];
             else
                 var horiz_spc = $this.find('thead').css('border-spacing').split(' ')[0];
@@ -95,9 +95,9 @@
                 'background-color': settings.foot_bgcolor
             });
             
-            if ($.browser.webkit) // https://bugs.webkit.org/show_bug.cgi?id=48975
+            if (typeof ($.browser) != 'undefined' && $.browser.webkit) // https://bugs.webkit.org/show_bug.cgi?id=48975
                 setTimeout(function(){$("<style></style>").appendTo("head").remove();}, 0);
-            if ($.browser.msie) // IE add scrollbar inside block [IE8]
+            if (typeof ($.browser) != 'undefined' && $.browser.msie) // IE add scrollbar inside block [IE8]
                 inner.css({ 'padding-right': 16 });
 
         });
